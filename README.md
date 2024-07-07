@@ -3,7 +3,7 @@ Welcome to the **Action Recognition** repository!. This project leverages cuttin
 
 ## 📄 Introduction
 This project aims to develop a comprehensive system for motion detection and object detection in ICU videos. The primary objectives are:
-- This Flask application uses a pretrained TensorFlow model to classify activities in video files, predicting classes like "WalkingWithDog" and "TaiChi." 
+- This Flask application uses a pretrained TensorFlow model to classify activities in video files, predicting classes like "WalkingWithDog" , "TaiChi", "HorseRace" and "JumpingRope". 
 - Processes video frames with OpenCV, resizing and normalizing them before making predictions.
 
 
@@ -81,7 +81,7 @@ For more details on using Postman, refer to the [Postman Documentation](https://
 ## 🏁 Conclusion
 This project is a video classification service that uses a LRCN (Long-term Recurrent Convolutional Network) model to predict activities in a video. It loads the model, extracts and preprocesses frames from an input video, and uses the model to predict the activity class for these frames. The predictions are overlaid on the video frames, and the annotated video is saved. The Flask app exposes a `/predict` endpoint, which accepts a video file via a POST request, processes the video to make predictions, and returns the annotated video. This enables seamless integration of video classification capabilities into other systems or applications.
 
-Future work will focus on improving the models’ accuracy, expanding the dataset, and exploring additional functionalities to enhance the system’s capabilities.
+Future work will focus on improving the models’ accuracy, expanding the dataset and classes, and exploring additional functionalities to enhance the system’s capabilities.
 
 ## 🚀 Get Started
 
