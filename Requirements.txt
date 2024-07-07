@@ -6,3 +6,4 @@ tensorFlow
 matplotlib
 moviePy
 scikit-learn
+youtube_dl
