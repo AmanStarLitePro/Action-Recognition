@@ -44,7 +44,7 @@ https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/f607f36b-
 **Server Access**
 - API accessible via the local host server at `http://127.0.0.1:5000`.
 
-## 📬 Access API Using Postman Software Using JSON
+## 📬 API Integration
 To access the API using Postman, follow these steps:
 
 - Install Postman:
