@@ -15,7 +15,6 @@ This project aims to develop a comprehensive system for motion detection and obj
 - [Features](#-features)
 - [API Integration](#-api-integration)
 - [Output](#-output)
-- [Project Report](#-project-report)
 - [Conclusion](#-conclusion)
 - [Get Started](#-get-started)
 
@@ -28,10 +27,10 @@ This project aims to develop a comprehensive system for motion detection and obj
 6. [Postman Software](https://learning.postman.com/docs/introduction/overview/)
 
 ## 🎥 Output Video
-![Demo Video](https://github.com/AritriPodde2210/TeleICU-Patient-Monitoring-System/assets/123970201/4fd1526b-b4e5-46de-901f-51a98cf9818f)
+https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/f607f36b-bc25-45bc-9a63-7ef70e37155d
 
 ## 🛠 Preprocessing
-![Preprocessing](https://github.com/AritriPodde2210/TeleICU-Patient-Monitoring-System/assets/123970201/2a31e784-deb7-411c-a15a-beb4e1d2e474)
+![Preprocessing](https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/2862174d-c9e0-4506-9d83-9798d2f92b4b)
 
 ## 🎯 Features
 
@@ -74,24 +73,8 @@ You should receive a response with the processed frames and video output.
 
 For more details on using Postman, refer to the [Postman Documentation](https://learning.postman.com/docs/introduction/overview/).
 
-
 ## 📊 Output
-![Output](https://github.com/AritriPodde2210/TeleICU-Patient-Monitoring-System/assets/123970201/819a41cb-b4d0-45fe-9d5a-ea6ebfd87f3e)
-
-## 📝 Project Report
-[Project_Report.pdf](https://github.com/user-attachments/files/16093663/Project_Report.pdf)
-
-## 🌟 Team Members and Contribution
-
-Meet the individuals behind **Team Tensor Stars** who contributed to this project:
-
-- **Md Alsaifi** - Team Lead,Video Collection and Preprocessing
-- **Aman Kumar Srivastav** - Object detection,Motion detection,API integration
-- **Aritri Podder** - Documentation , Report Writing and Research
-
-
-
-
+![Accuracy Vs Validation](https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/aba1eaec-3574-4cc1-91eb-325d93bcfd47)
 
 ## 🏁 Conclusion
 This project outlines the steps taken to develop and integrate a motion detection and object detection system for ICU videos. The combination of YOLOv8s and LSTM models has provided a robust solution for the project's objectives. The API integration further enhances usability, making it easier to deploy and utilize the system in real-world scenarios.
