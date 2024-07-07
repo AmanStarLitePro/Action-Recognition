@@ -19,12 +19,16 @@ This project aims to develop a comprehensive system for motion detection and obj
 - [Get Started](#-get-started)
 
 ## 📦 Requirements
-1. [Ultralytics Python Library](https://docs.ultralytics.com/)
+1. [PyGame](https://www.pygame.org/docs/)
 2. [OpenCV Python Library](https://docs.opencv.org/4.x/)
 3. [Numpy Python Library](https://numpy.org/doc/)
 4. [Tensorflow Python Library](https://www.tensorflow.org/api_docs)
-5. [Pyyaml Python Library](https://pyyaml.org/wiki/PyYAMLDocumentation)
-6. [Postman Software](https://learning.postman.com/docs/introduction/overview/)
+5. [PyDot Python Library](https://pypi.org/project/pydot/)
+6. [Matplotlib Python Library](https://matplotlib.org/stable/index.html)
+7. [MoviePy Python Library](https://pypi.org/project/moviepy/)
+8. [Scikit-Learn Python Library](https://scikit-learn.org/0.21/documentation.html)
+9. [Youtube_Dl Python Library](https://youtube-dl.readthedocs.io/en/latest/)
+10. [Postman Software](https://learning.postman.com/docs/introduction/overview/)
 
 ## 🎥 Output Video
 https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/f607f36b-bc25-45bc-9a63-7ef70e37155d
@@ -40,36 +44,34 @@ https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/f607f36b-
 **Server Access**
 - API accessible via the local host server at `http://127.0.0.1:5000`.
 
- ## 📬 Access API Using Postman Software Using JSON
+## 📬 Access API Using Postman Software Using JSON
 To access the API using Postman, follow these steps:
 
-Install Postman:
+- Install Postman:
 
-If you haven't already, download and install Postman from [here](https://www.postman.com/downloads/).
-Create a New Request:
+- If you haven't already, download and install Postman from [here](https://www.postman.com/downloads/).
 
-Open Postman and click on New to create a new HTTP request.
-Set the Request Type and URL:
+- Open Postman: Start the Postman application.
 
-Select POST as the request type.
-Enter the API endpoint URL: http://127.0.0.1:5000/predict.
-Set Headers:
+- Create a New Request: Click on the "New" button and select "HTTP Request".
 
-Click on the Headers tab and add the following key-value pair:
-Content-Type: application/json
-Set the Body:
+- Set Request Type: Change the request type to POST.
 
-Click on the Body tab and select raw and JSON (application/json).
-Enter the JSON payload with the video data you want to process. For example:
+- Enter the URL: In the request URL field, enter the endpoint URL: http://127.0.0.1:5000/predict.
 
-Copy code
-{
-  "video_path": "path/to/your/video.mp4"
-}
+- Add Video File:
 
-Send the Request:
-Click on Send to submit your request to the API.
-You should receive a response with the processed frames and video output.
+- Click on the "Body" tab below the URL field.
+   - Select "form-data".
+   - In the "Key" field, enter video.
+   - In the "Value" field, click on the dropdown and select "File".
+   - Choose the video file you want to upload.
+
+- Send the Request: Click the "Send" button.
+
+- Receive the Response:
+  - If the request is successful, the response should contain the annotated video file.
+  - You can download and view this video to see the predictions overlaid on the frames.
 
 For more details on using Postman, refer to the [Postman Documentation](https://learning.postman.com/docs/introduction/overview/).
 
@@ -77,7 +79,7 @@ For more details on using Postman, refer to the [Postman Documentation](https://
 ![Accuracy Vs Validation](https://github.com/AmanStarLitePro/Action-Recognition/assets/143260479/aba1eaec-3574-4cc1-91eb-325d93bcfd47)
 
 ## 🏁 Conclusion
-This project outlines the steps taken to develop and integrate a motion detection and object detection system for ICU videos. The combination of YOLOv8s and LSTM models has provided a robust solution for the project's objectives. The API integration further enhances usability, making it easier to deploy and utilize the system in real-world scenarios.
+This project is a video classification service that uses a LRCN (Long-term Recurrent Convolutional Network) model to predict activities in a video. It loads the model, extracts and preprocesses frames from an input video, and uses the model to predict the activity class for these frames. The predictions are overlaid on the video frames, and the annotated video is saved. The Flask app exposes a `/predict` endpoint, which accepts a video file via a POST request, processes the video to make predictions, and returns the annotated video. This enables seamless integration of video classification capabilities into other systems or applications.
 
 Future work will focus on improving the models’ accuracy, expanding the dataset, and exploring additional functionalities to enhance the system’s capabilities.
 
@@ -87,11 +89,7 @@ Future work will focus on improving the models’ accuracy, expanding the datase
 
 ```sh
 pip install -r requirements.txt
-python main.py
-
-## Access the API:
-Open your browser and go to http://127.0.0.1:9000/index.
-
+python api.py
 
 Thank you for checking out our project! If you have any questions or feedback, feel free to reach out to us.
 
